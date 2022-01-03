@@ -1,0 +1,32 @@
+create table telep(
+       id                   number not null primary key,
+       jarmu_kapacitas      number not null,
+       szerelveny_kapacitas number not null,
+       telepules            varchar2(30),
+       utca                 varchar2(30),
+       hazszam              int,
+       iranyitoszam         int,
+       last_mod             timestamp(6),
+       created              timestamp(6),
+       mod_user             varchar2(300),
+       dml_flag	            varchar2(1),
+       version	            number
+)
+tablespace users;
+
+insert into telep(id,
+                  jarmu_kapacitas,
+                  szerelveny_kapacitas,
+                  telepules,
+                  utca,
+                  hazszam,
+                  iranyitoszam)
+                  values(1,10,10,'Pécs','Széchenyi','9','7632');
+insert into telep(id,
+                  jarmu_kapacitas,
+                  szerelveny_kapacitas,
+                  telepules,
+                  utca,
+                  hazszam,
+                  iranyitoszam)
+                  values(2,15,15,'Pécs','József Attila','73','7632');

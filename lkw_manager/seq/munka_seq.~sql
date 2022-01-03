@@ -1,0 +1,5 @@
+create sequence munka_seq start with 100;
+
+select munka_seq.nextval from dual;
+
+select munka_seq.currval from dual;

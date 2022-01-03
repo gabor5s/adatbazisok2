@@ -1,0 +1,5 @@
+ALTER TABLE munka
+  ADD CONSTRAINT kamion_id_fk FOREIGN KEY (kamion_id) REFERENCES jarmu(id);
+  
+ALTER TABLE munka
+  ADD CONSTRAINT szerelveny_id_fk FOREIGN KEY (szerelveny_id) REFERENCES szerelveny(id);

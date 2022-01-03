@@ -28,10 +28,14 @@ PROMPT Installing DB...
 -- Packes
 
 -- Views
-@./view/jarmu_munka.sql
 @./view/max_km.sql
 @./view/telep_jarmu1.sql
 @./view/ures_fuvar.sql
+@./view/forgalomban.sql
+@./view/legkevesebb_suly.sql
+@./view/legtobb_suly.sql
+@./view/max_km.sql
+@./view/szuletesnap.sql
 
 -- Triggers
 @./triggers/alkalmazott_trg.trg
@@ -61,6 +65,9 @@ END;
 @./tables_data/jarmu_data.sql
 @./tables_data/szerelveny_data.sql
 @./tables_data/munka_data.sql
+
+--function
+@./function/table_count.fnc
 
 commit;
 

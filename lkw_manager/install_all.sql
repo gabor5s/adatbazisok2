@@ -26,9 +26,9 @@ PROMPT Installing DB...
 -- Install types
 
 -- Packes
+@./package/pkg_exception.spc
 
 -- Views
-@./view/max_km.sql
 @./view/telep_jarmu1.sql
 @./view/ures_fuvar.sql
 @./view/forgalomban.sql
@@ -36,6 +36,8 @@ PROMPT Installing DB...
 @./view/legtobb_suly.sql
 @./view/max_km.sql
 @./view/szuletesnap.sql
+@./view/ossztomeg_kamion.sql
+@./view/kamion_munka_count.sql
 
 -- Triggers
 @./triggers/alkalmazott_trg.trg
@@ -49,6 +51,8 @@ PROMPT Installing DB...
 @./triggers/jarmu_h_trg.trg
 @./triggers/munka_h_trg.trg
 @./triggers/szerelveny_h_trg.trg
+
+@./triggers/suly_valtoztatas.trg
 -- Recompile schema
 BEGIN
   dbms_utility.compile_schema(schema => 'LKW_MANAGER');
@@ -68,6 +72,8 @@ END;
 
 --function
 @./function/table_count.fnc
+--procedure
+@./procedure/telep_proc.prc
 
 commit;
 

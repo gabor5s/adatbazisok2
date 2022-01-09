@@ -74,6 +74,7 @@ END;
 @./function/table_count.fnc
 --procedure
 @./procedure/telep_proc.prc
+@./procedure/fuvar_dij.prc
 
 commit;
 

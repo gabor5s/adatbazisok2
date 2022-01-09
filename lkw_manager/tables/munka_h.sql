@@ -9,6 +9,7 @@ create table munka_h(
        kamion_id          number,
        szerelveny_id      number,
        fuvarszervezo_id   number,
+       tavolsag           number,
        last_mod           timestamp(6),
        created            timestamp(6),
        mod_user           varchar2(300),

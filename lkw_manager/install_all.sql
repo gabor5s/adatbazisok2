@@ -72,6 +72,7 @@ END;
 
 --function
 @./function/table_count.fnc
+@./function/sofor_kamion_tipus.fnc
 --procedure
 @./procedure/telep_proc.prc
 @./procedure/fuvar_dij.prc

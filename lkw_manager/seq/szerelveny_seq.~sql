@@ -1,5 +1,0 @@
-create sequence szerelveny_seq start with 100;
-
-select szerelveny_seq.nextval from dual;
-
-select szerelveny_seq.currval from dual;

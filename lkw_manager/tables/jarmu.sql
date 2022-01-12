@@ -8,7 +8,7 @@ create table jarmu(
        futott_km                 number,
        teherbiras                number,
        teljesitmeny              int,
-       sofor_id                  number not null,
+       sofor_id                  number not null unique,
        telep_id                  number not null,
        last_mod                  timestamp(6),
        created                   timestamp(6),

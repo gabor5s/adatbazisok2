@@ -20,6 +20,11 @@ BEGIN
   
     :new.version := :old.version + 1;
   END IF;
+  
+  if :new.erkezesi_datum < :new.indulasi_datum
+    then
+      raise_application_error(pkg_exception.gc_date_invalid_exc_code, 'Hibas datum: erkezesi datum nem lehet kisebb az indulasinal.');
+      end if;
 
   :new.last_mod := SYSDATE;
   :new.mod_user := sys_context('USERENV', 'OS_USER');

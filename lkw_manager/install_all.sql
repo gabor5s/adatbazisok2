@@ -73,9 +73,36 @@ END;
 --function
 @./function/table_count.fnc
 @./function/sofor_kamion_tipus.fnc
+
 --procedure
 @./procedure/telep_proc.prc
 @./procedure/fuvar_dij.prc
+
+   --alkalmazott
+@./procedure/alkalmazott_insert.prc
+@./procedure/alkalmazott_delete.prc
+@./procedure/alkalmazott_update.prc
+
+   --telep
+@./procedure/telep_insert.prc
+@./procedure/telep_delete.prc
+@./procedure/telep_update.prc
+
+   --jarmu
+@./procedure/jarmu_telep_change.prc
+@./procedure/jarmu_insert.prc
+@./procedure/jarmu_delete.prc
+@./procedure/jarmu_update.prc
+
+   --munka
+@./procedure/munka_insert.prc
+@./procedure/munka_delete.prc
+@./procedure/munka_update.prc
+
+   --szerelveny
+@./procedure/szerelveny_insert.prc
+@./procedure/szerelveny_delete.prc
+@./procedure/szerelveny_update.prc
 
 commit;
 

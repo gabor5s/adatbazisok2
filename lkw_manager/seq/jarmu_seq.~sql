@@ -1,5 +1,0 @@
-create sequence jarmu_seq start with 100;
-
-select jarmu_seq.nextval from dual;
-
-select jarmu_seq.currval from dual;

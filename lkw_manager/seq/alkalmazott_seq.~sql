@@ -1,5 +1,0 @@
-create sequence alkalmazott_seq start with 100;
-
-select alkalmazott_seq.nextval from dual;
-
-select alkalmazott_seq.currval from dual;

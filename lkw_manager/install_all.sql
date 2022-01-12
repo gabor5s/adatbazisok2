@@ -28,6 +28,8 @@ PROMPT Installing DB...
 
 -- Install types
 @./type/ty_fuvar_dij.typ
+@./type/ty_telep_proc.typ
+@./type/ty_telep_proc_list.tps
 
 -- Packes
 @./package/pkg_exception.spc
@@ -81,9 +83,9 @@ END;
 @./function/table_count.fnc
 @./function/sofor_kamion_tipus.fnc
 @./function/fuvar_dij1.fnc
+@./function/telep_proc1.fnc
 
 --procedure
-@./procedure/telep_proc.prc
 
    --alkalmazott
 @./procedure/alkalmazott_insert.prc

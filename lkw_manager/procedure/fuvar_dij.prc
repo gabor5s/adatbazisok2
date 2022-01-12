@@ -9,15 +9,18 @@ cursor cur is
        from munka m inner join jarmu j on m.kamion_id = j.id
        where m.id = p_munka_id;
 
+type fuvar_dij_list is table of ty_fuvar_dij;
+fuvar_dij ty_fuvar_dij;
 begin
   for i in cur
     loop
-      dbms_output.put_line('Jármû típus: ' || i.jarmu_tipus || chr(10) || 
-      'Rendszám: ' || i.rendszam || chr(10) || 
-      'Indulási hely: ' || i.indulasi_hely || chr(10) || 
-      'Érkezési hely: ' || i.erkezesi_hely || chr(10) || 
-      'Rakomány: ' || i.rakomany || chr(10) ||
-      'Fuvar díja: ' || i.dij || 'Ft');
+      fuvar_dij_list.extend(1);
+      fuvar_dij_list(fuvar_dij_list.count) := ty_fuvar_dij(jarmu_tipus   => i.jarmu_tipus,
+                                                           rendszam      => i.rendszam,
+                                                           indulasi_hely => i.indulasi_hely,
+                                                           erkezesi_hely => i.erkezesi_hely,
+                                                           rakomany      => i.rakomany,
+                                                           fuvar_dija    => i.dij);
     end loop;
 end;
 /

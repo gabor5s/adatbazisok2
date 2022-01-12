@@ -8,6 +8,7 @@ PROMPT Installing DB...
 @./seq/jarmu_seq.sql
 @./seq/munka_seq.sql
 @./seq/szerelveny_seq.sql
+@./seq/param_seq.sql
 
 -- Install tables
 @./tables/alkalmazott.sql
@@ -15,6 +16,7 @@ PROMPT Installing DB...
 @./tables/jarmu.sql
 @./tables/munka.sql
 @./tables/szerelveny.sql
+@./tables/parameter_tabla.sql
 
 --history tables
 @./tables/alkalmazott_h.sql
@@ -22,8 +24,10 @@ PROMPT Installing DB...
 @./tables/jarmu_h.sql
 @./tables/munka_h.sql
 @./tables/szerelveny_h.sql
+@./tables/parameter_tabla_h.sql
 
 -- Install types
+@./type/ty_fuvar_dij.typ
 
 -- Packes
 @./package/pkg_exception.spc
@@ -45,12 +49,14 @@ PROMPT Installing DB...
 @./triggers/jarmu_trg.trg
 @./triggers/munka_trg.trg
 @./triggers/szerelveny_trg.trg
+@./triggers/parameter_trg.trg
 
 @./triggers/alkalmazott_h_trg.trg
 @./triggers/telep_h_trg.trg
 @./triggers/jarmu_h_trg.trg
 @./triggers/munka_h_trg.trg
 @./triggers/szerelveny_h_trg.trg
+@./triggers/parameter_h_trg.trg
 
 @./triggers/suly_valtoztatas.trg
 -- Recompile schema
@@ -69,14 +75,15 @@ END;
 @./tables_data/jarmu_data.sql
 @./tables_data/szerelveny_data.sql
 @./tables_data/munka_data.sql
+@./tables_data/parameter_tabla_data.sql
 
 --function
 @./function/table_count.fnc
 @./function/sofor_kamion_tipus.fnc
+@./function/fuvar_dij1.fnc
 
 --procedure
 @./procedure/telep_proc.prc
-@./procedure/fuvar_dij.prc
 
    --alkalmazott
 @./procedure/alkalmazott_insert.prc
